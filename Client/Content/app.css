@@ -1,0 +1,130 @@
+/*app.css created by Lucas, Lai Sing Lau | 301198475 @ 20220601*/
+a {
+    text-decoration: none;
+    color: #818181;
+}
+a:hover {
+    color: #ffdb00;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+body {
+    background-color: #ffdb00;
+}
+
+/*Sidebar menu*/
+header {
+    width: 150px;
+    height: 100vh;
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#logo {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+#sidebar {
+    width: 100%;
+}
+#sidebar a {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+}
+#social a {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+/*mobile menu*/
+#mMenu {
+    display: none;
+    font-size: 2rem;
+    text-align: right;
+    color: #818181;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+header.active {
+    width: 100vw;
+    margin: 0;
+    text-align: center;
+    
+}
+@media only screen and (max-width: 991px) {
+    header {
+        margin-left: -150px;
+    }
+    #mMenu {
+        display: block;
+    }
+}
+
+/*main content*/
+main {
+    display: block;
+    position: relative;
+    min-height: 95vh;
+    margin-left: 150px;
+}
+.title {
+    color: #ffdb00
+}
+@media only screen and (max-width: 991px) {
+    main {
+        padding-top: 70px;
+        margin-left: 0;
+    }
+}
+
+/*projects*/
+.card {
+    background-color: #212529;
+}
+
+/*contact and about*/
+.darkMap {
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+#cMap, #myPhoto {
+    height: 95vh;
+}
+@media only screen and (max-width: 991px) {
+    #cMap, #myPhoto {
+        height: 50vh;
+    }
+}
+#myPhoto {
+    background-image: url('../Assets/images/icon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*footer*/
+footer {
+    min-height: 5vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}

@@ -1,0 +1,59 @@
+<!-- contact.ejs created by Lucas, Lai Sing Lau | 301198475 @ 20220601 -->
+<div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-6 m-auto p-4">
+        <h2 class="title"><%= title %></h2>
+        <p class="mb-5">I'm interested in any web development job in Toronto.  Please use the form to inquire about rates and availability, or <a href="emailto:lau34@my.centennialcollege.ca">email me</a> directly.  Thank you so much!</p>
+        <form id="cForm" class="row g-3 bootstrapForm" novalidate action="/">
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label text-warning">First Name</label>
+            <input type="text" class="form-control" id="validationCustom01" required name="fName">
+            <div class="invalid-feedback">
+              Please enter your first name.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label text-warning">Last Name</label>
+            <input type="text" class="form-control" id="validationCustom02" required name="lName">
+            <div class="invalid-feedback">
+              Please enter your last name.
+            </div>
+          </div>
+          <div class="col-md-6">
+              <label for="validationCustom03" class="form-label text-warning">Phone Number</label>
+              <input type="text" class="form-control" id="validationCustom03" required name="phone">
+              <div class="invalid-feedback">
+                Please enter your phone number.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label text-warning">Email</label>
+              <input type="text" class="form-control" id="validationCustom04" required name="email">
+              <div class="invalid-feedback">
+                Please enter your email.
+              </div>
+            </div>
+          <div class="col-md-12">
+              <label for="validationCustom05" class="form-label text-warning">Subject</label>
+              <input type="text" class="form-control" id="validationCustom05" required name="subject">
+              <div class="invalid-feedback">
+                Please enter subject.
+              </div>
+          </div>
+          <div class="col-md-12">
+              <label for="validationCustom06" class="form-label text-warning">Message</label>
+              <textarea class="form-control" id="validationCustom06" rows="5" required name="message" style="resize: none;"></textarea>
+              <div class="invalid-feedback">
+                  Please enter some message.
+              </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-warning" type="submit" value="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+      <div id="cMap" class="col-lg-6 m-auto px-0 pb-4">
+        <iframe class="darkMap"" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.533988182988!2d-79.23671903669036!3d43.78253414362059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d0f21fd9078f%3A0x46e3fe92c0cd2b18!2sCentennial%20College!5e0!3m2!1sen!2shk!4v1654136839488!5m2!1sen!2shk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+</div>
